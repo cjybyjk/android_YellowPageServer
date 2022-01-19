@@ -107,6 +107,6 @@ def report():
 if __name__ == '__main__':
     init_db()
     if app.config.get('USE_SSL'):
-        app.run(debug=False, port=app.config.get('PORT'), ssl_context=(app.config.get('ssl_cert'), app.config.get('ssl_key')))
+        app.run(debug=False, port=app.config.get('PORT'), ssl_context=(app.config.get('SSL_CERT'), app.config.get('SSL_KEY')))
     else:
         app.run(debug=False, port=app.config.get('PORT'))       
